@@ -17,7 +17,7 @@ module.exports = function (grunt) {
 				defaultExt: 'html',
 
 				//wait or not for the process to finish
-				runInBackground: true
+				runInBackground: false
 			}
 		},
 		processhtml: {

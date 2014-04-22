@@ -9,14 +9,15 @@ require.config({
 
 define([
 	"require"
-	,"./libs/jquery/dist/jquery.min.js"
-	,"./libs/swig/dist/swig.min.js"
-	,"./libs/jStorage/jstorage.min.js"
-	,"deep-browser/index"
+	,"deepjs/deep"
+	,"jquery/dist/jquery.min"
+	,"deep-swig/lib/swig.min"
 	,"deep-swig/index"
+	,"jStorage/jstorage.min"
+	,"deep-browser/index"
 	,"deep-jquery/ajax/json"
 	// ,"deep-local-storage/index"
-], function(require, jq, sw, jst, deep) {
+], function(require, deep, jq, sw, jst) {
 
 	deep.jquery.set($);
 	//deep.client.Swig.create(); 

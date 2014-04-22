@@ -63,13 +63,12 @@ var AutobahnGenerator = yeoman.generators.Base.extend({
 
 	},
 	app: function () {
-		//this.mkdir('www');
-		//this.mkdir('www/templates');
-
 		this.template('_package.json', 'package.json');
-		this.copy('_bower.json', 'bower.json');
-		this.copy('_index.js', 'index.js');
+		this.template('_bower.json', 'bower.json');
+		this.copy('_app.js', 'app.js');
+		this.copy('_index.html', 'index.html');
 		this.copy('_Gruntfile.js', 'Gruntfile.js');
+		this.copy('bowerrc', '.bowerrc');
 	},
 	projectfiles: function () {
 		this.copy('jshintrc', '.jshintrc');
