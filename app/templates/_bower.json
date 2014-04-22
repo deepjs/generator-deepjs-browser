@@ -1,0 +1,28 @@
+{
+  "name": "<%= applicationName %>",
+  "main": "./index.html",
+  "version": "<%= version %>",
+  "homepage": "<%= githubURL %>",
+  "authors": [
+    "<%= author %> <<%= email %>>"
+  ],
+  "description": "<%= description %>",
+  "license": "MIT",
+  "private": false,
+  "dependencies": {
+    "bootstrap": ">= v3.0.3",
+   	"jquery": ">= 2.0.3",
+    "rql": ">= 0.3.1",
+    "jStorage": ">= v0.4.8",
+    "requirejs": ">= 2.1.10",
+    "deepjs": "git@github.com:deepjs/deepjs.git",
+    "deep-swig": "git@github.com:deepjs/deep-swig.git",
+    "deep-browser": "git@github.com:deepjs/deep-browser.git",
+    "deep-routes": "git@github.com:deepjs/deep-routes.git",
+    "deep-data-bind": "git@github.com:deepjs/deep-data-bind.git",
+    "deep-local-storage": "git@github.com:deepjs/deep-local-storage.git",
+    "deep-jquery": "git@github.com:deepjs/deep-jquery.git",
+    "deep-widgets": "git@github.com:deepjs/deep-widgets.git"
+    }
+}
+

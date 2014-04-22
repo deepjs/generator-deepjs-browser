@@ -1,0 +1,28 @@
+{
+  "name": "<%= applicationName %>",
+  "version": "<%= version %>",
+  "description"   : "<%= description %>",
+  "author"        : "<%= author %> <<%= email %>>",
+  "contributors"  : ["<%= author %>  <<%= email %>>"],
+  "repository": {
+    "type":"git",
+    "url":"<%= githubURL %>"
+  },
+  "keywords": [
+    "deepjs",
+    "singlePage",
+    "browser"
+  ],
+  "license": "MIT",
+  "dependencies": {
+  },
+  "devDependencies": {
+    "grunt-requirejs": "~0.4.1",
+    "grunt": "~0.4.4",
+    "grunt-http-server": "0.0.4",
+    "grunt-processhtml": "~0.3.0"
+  },
+  "engines": {
+    "node": ">=0.10.0"
+  }
+}
