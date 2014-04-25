@@ -1,6 +1,6 @@
 {
   "name": "generator-deepjs-browser",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Yo generator to scaffold a browser deepjs application",
   "license": "MIT",
   "main": "app/index.js",

@@ -21,7 +21,7 @@ var AutobahnGenerator = yeoman.generators.Base.extend({
 		this.log(this.yeoman);
 
 		// replace it with a short and sweet description of your generator
-		this.log(chalk.magenta('You\'re using the fantastic Autobahn generator.'));
+		this.log(chalk.magenta('You\'re using the fantastic deepjs-browser generator.'));
 
 		var prompts = [{
 			name: 'author',
@@ -69,6 +69,11 @@ var AutobahnGenerator = yeoman.generators.Base.extend({
 		this.copy('_index.html', 'index.html');
 		this.copy('_Gruntfile.js', 'Gruntfile.js');
 		this.copy('bowerrc', '.bowerrc');
+		this.mkdir('templates');
+		this.mkdir('app');
+		this.copy('app/_htmls.js', 'app/htmls.js');
+		this.copy('templates/_simple.html', 'templates/simple.html');
+		this.copy('templates/_simple2.html', 'templates/simple2.html');
 	},
 	projectfiles: function () {
 		this.copy('jshintrc', '.jshintrc');
