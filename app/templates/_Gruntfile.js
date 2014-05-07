@@ -48,12 +48,37 @@ module.exports = function (grunt) {
 					}
 				}
 			}
-		}
+		}/*,
+		less: {
+		  development: {
+		    options: {
+		      paths: ["assets/css"]
+		    },
+		    files: {
+		      "path/to/result.css": "path/to/source.less"
+		    }
+		  },
+		  production: {
+		    options: {
+		      paths: ["assets/css"],
+		      cleancss: true,
+		      modifyVars: {
+		        imgPath: '"http://mycdn.com/path/to/images"',
+		        bgColor: 'red'
+		      }
+		    },
+		    files: {
+		      "path/to/result.css": "path/to/source.less"
+		    }
+		  }
+		}*/
 	});
+
+	//https://github.com/gruntjs/grunt-contrib-less
+	/*grunt.loadNpmTasks('grunt-contrib-less');*/
 
 	grunt.loadNpmTasks('grunt-requirejs');
 	grunt.loadNpmTasks('grunt-http-server');
-
 	// Default task(s).
 	grunt.registerTask('default', ['requirejs']);
 
